@@ -22,3 +22,12 @@ Steps for matching two point clouds using the ICP algorithm:
 3. **Compute transformation**: Once the closest points have been identified, the ICP algorithm computes the transformation that minimizes the distance between the corresponding points in the two point clouds.
 4. **Update transformation**: The computed transformation is then used to update the transformation between the two point clouds.
 5. **Repeat**: Steps 2-4 are repeated until the transformation between the two point clouds no longer changes significantly.
+
+___
+
+<p align="center" width="100%">
+<img src="https://github.com/gasingh/ICP-3D/blob/main/240429_translate%26rotateUsingPyrePython_00.gif" width="800" /> </br>
+<b>GIF 1</b> </br> A proof of concept to illustrate the (R,t) implementation when R and t are extracted from SVD!
+</p>
+
+
