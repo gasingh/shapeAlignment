@@ -3,6 +3,7 @@
 
 _The ICP algorithm can be used to match point clouds in a variety of applications, including robotics, computer vision, and 3D scanning. It is a powerful method for aligning point clouds and can be used to create high-quality 3D models from multiple scans or to register 3D objects in real time._
 
+`#machine-learning` `#statistics` `#linear-algebra` `#applied-maths` `#3d` `#geometry`
 
 ## Aim
 - This is a native Python implementation for an ICP algorithm for Rhino3D.
