@@ -42,8 +42,6 @@ ___
 <img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240509_021805.jpg" width="200" /> 
 <img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240509_021815.jpg" width="200" /> </br>
 <b>Image Set 1</b> </br> Alignment transitions of tea-pot geometries!
-<img src="https://github.com/gasingh/ICP-3D/blob/main/Capture_silencedPCA_solver_02_snip-00_web.JPG" width="800" /> </br>
-<b>Image 2</b> </br> Screenshot from Rhino3D with the PCA integrated with Rhinocommon to report & augment geometries
 </p>
 
 
