@@ -37,7 +37,7 @@ ___
 <p align="center" width="100%">
 <b> Exercise 2: PCA based one shot alignments </b><br>
   Exercise 2 is an alignment tool with one shot alignments of similar shape meshes in Rhino 3d! So select a parent and select a child, the child aligns itself to the parent in one shot! <br>
-<img src="https://github.com/gasingh/ICP-3D/blob/main/240508_pca_kettle-3d-mesh-alignment_try2_preview.gif" width="500" /> </br>
+<img src="https://github.com/gasingh/ICP-3D/blob/main/240508_pca_kettle-3d-mesh-alignment_try3_preview.gif" width="500" /> </br>
 <b>GIF 1</b> </br> A proof of concept to align meshes in one shot by PCA!<br>
 <img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240509_020634.jpg" width="250" /> 
 <img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240509_021815.jpg" width="250" /> </br>
