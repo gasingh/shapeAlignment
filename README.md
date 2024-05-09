@@ -38,9 +38,9 @@ ___
 <b> Exercise 2: PCA based one shot alignments </b><br>
 <img src="https://github.com/gasingh/ICP-3D/blob/main/240508_pca_kettle-3d-mesh-alignment_try2_preview.gif" width="500" /> </br>
 <b>GIF 1</b> </br> A proof of concept to align meshes in one shot by PCA!<br>
-<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240509_020634.jpg" width="200" /> 
-<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240509_021805.jpg" width="200" /> 
-<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240509_021815.jpg" width="200" /> </br>
+<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240509_020634.jpg" width="250" /> 
+<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240509_021805.jpg" width="250" /> 
+<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240509_021815.jpg" width="250" /> </br>
 <b>Image Set 1</b> </br> Alignment transitions of tea-pot geometries!
 </p>
 
