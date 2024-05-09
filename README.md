@@ -27,8 +27,23 @@ Steps for matching two point clouds using the ICP algorithm:
 ___
 
 <p align="center" width="100%">
-<img src="https://github.com/gasingh/ICP-3D/blob/main/240429_translate%26rotateUsingPyrePython_00.gif" width="800" /> </br>
+<b> Exercise 1: Transformations based on homogenous matrices </b> <br> <br>
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240429_translate%26rotateUsingPyrePython_00.gif" width="800" /> </br>
 <b>GIF 1</b> </br> A proof of concept to illustrate the (R,t) implementation when R and t are extracted from SVD!
+</p>
+
+___
+
+<p align="center" width="100%">
+<b> Exercise 2: PCA based one shot alignments </b><br>
+<img src="https://github.com/gasingh/ICP-3D/blob/main/240508_pca_kettle-3d-mesh-alignment_try2_preview.gif" width="500" /> </br>
+<b>GIF 1</b> </br> A proof of concept to align meshes in one shot by PCA!<br>
+<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240509_020634.jpg" width="200" /> 
+<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240509_021805.jpg" width="200" /> 
+<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240509_021815.jpg" width="200" /> </br>
+<b>Image Set 1</b> </br> Alignment transitions of tea-pot geometries!
+<img src="https://github.com/gasingh/ICP-3D/blob/main/Capture_silencedPCA_solver_02_snip-00_web.JPG" width="800" /> </br>
+<b>Image 2</b> </br> Screenshot from Rhino3D with the PCA integrated with Rhinocommon to report & augment geometries
 </p>
 
 
