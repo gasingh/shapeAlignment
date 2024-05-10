@@ -44,4 +44,24 @@ ___
 <b>Image Set 1</b> </br> Alignment of tea-pot geometries based on a parent geometry reference!
 </p>
 
+___
+
+<p align="center" width="100%">
+<b> Exercise 3: PCA based one shot alignments: SymmetryCorrections </b><br>
+Exercise 3 is an alignment correction procedure applied to the initial alignment tool. We perform a post-alignment mesh intersection check, if there is an error alignment, we recompute the PCAs and flip the PCA axes, and realign, until there is a perfect match. <br>
+<img src="https://github.com/gasingh/ICP-3D/blob/main/240509_pca_bunnies_alignmentErrors_symmetry.gif" width="400" />
+<img src="https://github.com/gasingh/ICP-3D/blob/main/240509_pca_bunnies_alignmentErrors_symmetry_FIX.gif" width="400" /> <br>
+<b>GIF 1,2</b> </br> PCA alignment symmetry error!(LEFT), and the FIX (right)<br>
+<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240510_024959.jpg" width="300" />
+<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240510_024402.jpg" width="300" />
+<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240510_031145.jpg" width="300" /> <br>
+<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240510_031012.jpg" width="300" />
+<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240510_031436.jpg" width="300" />
+<img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240510_025004.jpg" width="300" /> </br>
+<b>Image Set 2</b> </br> PCA doesnot know the orientation direction of the agglomeration always, so vectors can get flipped!
+<img src="https://github.com/gasingh/ICP-3D/blob/main/240509_pca_bunnies_alignmentErrors_symmetry_FIX-DEMO.gif" width="500" /> </br>
+<b>GIF 3</b> </br> We fix the orientation problem, by recomputing PCAs and flipping the axis vectors, until overlap converged is met! <br>
+</p>
+
+___
 
