@@ -1,6 +1,8 @@
 # ICP-3D
 **ICP Algorithm for Rhino3D**
 
+![](https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240531_043415%20-%20Copy.jpg)
+
 _The ICP algorithm can be used to match point clouds in a variety of applications, including robotics, computer vision, and 3D scanning. It is a powerful method for aligning point clouds and can be used to create high-quality 3D models from multiple scans or to register 3D objects in real time._
 
 `#machine-learning` `#statistics` `#linear-algebra` `#applied-maths` `#3d` `#geometry`
@@ -27,6 +29,21 @@ Steps for matching two point clouds using the ICP algorithm:
 ___
 
 <p align="center" width="100%">
+<b> FINAL ICP RESULTS (Implemented inside Rhino3D) </b> <br> <br>
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view1.gif" width="800" /> </br>
+  <b>GIF 1: Bunnies: Front View </b> </br> 
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view2.gif" width="800" /> </br>
+  <b>GIF 2: Bunnies: 3D View </b> </br> 
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view3.gif" width="800" /> </br>
+  <b>GIF 3: Octopus: Front View </b> </br> 
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view4.gif" width="800" /> </br>
+  <b>GIF 4: Octopus: 3D View </b> </br>
+</p>
+
+___
+
+<p align="center" width="100%">
+<b> EXERCISES </b> <br> <br>
 <b> Exercise 1: Transformations based on homogenous matrices </b> <br> <br>
   <img src="https://github.com/gasingh/ICP-3D/blob/main/240429_translate%26rotateUsingPyrePython_00.gif" width="800" /> </br>
 <b>GIF 1</b> </br> A proof of concept to illustrate the (R,t) implementation when R and t are extracted from SVD!
