@@ -5,6 +5,8 @@
 
 _The ICP algorithm can be used to match point clouds in a variety of applications, including robotics, computer vision, and 3D scanning. It is a powerful method for aligning point clouds and can be used to create high-quality 3D models from multiple scans or to register 3D objects in real time._
 
+_This is an implementation of the ICP inside Rhino. All the math is coded independently inside pure Python with no external code. The ICP is embedded inside Rhinocommon API, to leverage direct access to Rhino 3D point clouds and meshes._
+
 `#machine-learning` `#statistics` `#linear-algebra` `#applied-maths` `#3d` `#geometry`
 
 ## Aim
@@ -21,10 +23,11 @@ The Iterative Closest Point (ICP) algorithm is a widely used method for aligning
 Steps for matching two point clouds using the ICP algorithm:
 
 1. **Initialize the transformation**: The ICP algorithm starts by initializing the transformation between the two point clouds.
-2. **Find closest points**: For each point in the first point cloud, find the closest point in the second point cloud.
-3. **Compute transformation**: Once the closest points have been identified, the ICP algorithm computes the transformation that minimizes the distance between the corresponding points in the two point clouds.
-4. **Update transformation**: The computed transformation is then used to update the transformation between the two point clouds.
-5. **Repeat**: Steps 2-4 are repeated until the transformation between the two point clouds no longer changes significantly.
+2. **Find closest points**: For each point in the first point cloud, find the closest point in the second point cloud. (CORRESPONDENCES)
+3. **Compute transformation**: Once the closest points have been identified, the ICP algorithm computes the transformation that minimizes the distance between the corresponding points in the two point clouds.(COMPUTE SVD, TO GET (R,t) FOR APPROPRIATE ROTATION & TRANSLATION OF THE DATASET).
+4. **Update transformation**: The computed transformation is then used to update the transformation between the two point clouds. (REALIGN POINTS)
+5. **Repeat**: Steps 2-4 are repeated until the transformation between the two point clouds no longer changes significantly. (CHECK FOR CONVERGENCE, EITHER BY AN ITERATION LIMIT/ A CONVERGENCE TOLERANCE LIMIT)
+6. **Additional Considerations**: It is noted that the ICP sometimes never converges, as it gets stick by finding a local minima. We addressed this problem by implementing rotation clones of the input mesh via PCA, along the identified principal axes. We iteratively iterate this multiple rotation dataset over the above implemented ICP solver to find successful convergence. (CONVERGENCE MEASURES)
 
 ___
 
