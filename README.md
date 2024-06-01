@@ -32,9 +32,13 @@ _The ICP algorithm can be used to match point clouds in a variety of application
 ### 2. Octopus
   Mesh: High Resolution Octopus with 3436 faces, 1752 vertices.
   <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view6_octopus_rec4_final.gif" width="800" /> </br>
-  <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun2_optimal.gif" width="800" /> </br>
+  The animation below shows the central octopus aligning to the two side octopuses in different poses. <br>
   <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun5_optimal2.gif" width="800" /> </br>
-  
+  The animations below show the octopuses on the two sides aligning to the central octopus. For illustrating the complexity of geometrical transitions involved in the shape alignments, both the front and top views are shown. <br>
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun2_optimal.gif" width="800" /> </br>
+  <i> Front View </i> <br>
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun3_topView.gif" width="800" /> </br>
+  <i> Top View </i> <br>
 
 ## Process of Development
 Mesh: Decimated Neferetti with 4594 faces, 2502 vertices.  
