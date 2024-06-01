@@ -30,6 +30,8 @@ _The ICP algorithm can be used to match point clouds in a variety of application
   - [eggert_comparison_mva97.pdf](https://graphics.stanford.edu/~smr/ICP/comparison/eggert_comparison_mva97.pdf)
 - A paper on registration of 3d shapes by Stanford:
   - [A method for registration of 3-D shapes](https://graphics.stanford.edu/courses/cs164-09-spring/Handouts/paper_icp.pdf)
+- ICP documentation by Open3D.
+  - [ICP registration](https://www.open3d.org/docs/latest/tutorial/t_pipelines/t_icp_registration.html)
     
 ## Demonstration of ICP inside Rhino 3D on various datasets
   
