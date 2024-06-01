@@ -13,10 +13,42 @@ _This is an implementation of the ICP inside Rhino. All the math is coded indepe
 - This is a native Python implementation for an ICP algorithm for Rhino3D.
 - The aim is to be able to utilize this functionality inside the Rhino 3D environment.
 
+### Demonstration of ICP inside Rhino 3D on various datasets
+  
+#### 1. Stanford Bunny
+  Mesh: Decimated Stanford Bunny with 178 faces, 95 vertices.
+  
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view1.gif" width="800" /> </br>
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view2.gif" width="800" /> </br>
+  
+#### 2. Octopus
+  Mesh: High Resolution Octopus with 3436 faces, 1752 vertices.
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view3.gif" width="800" /> </br>
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view4.gif" width="800" /> </br>
+
+### Process of Development
+Mesh: Decimated Neferetti with 4594 faces, 2502 vertices.  
+  
+Initially all the code was written in an external Python file (Python 3.4 in VSCode) . And then the interfacing with the 3d software was with custom data readers which were written inside Rhino3D to read matrix generated outputs from the ICP solver code, as meshes/ point clouds inside the 3d environment.  
+
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240529_ICP-DemoPts_real-time-rec_example2_presentationVersion3_final_reduced2_240601.gif" width="800" /> </br>
+
+_GIF 1: ICP calculated externally and the final results read by Rhino 3d._
+
+Later on, the tool was downgraded to Python 2.7 (the officially suppoted Python version for Rhino v7.0, 2024!). And the entire ICP compute can happen directly inside it as a new Rhino command.
+
+<img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view5_nefertiti.gif" width="450" /> </br>
+
+_GIF 2: ICP integrated as a functionality inside Rhino3d._
+
+___
+
+<details>
+<summary> <h4> Pseudocode </h4> </summary>
 
 ## Pseudocode 
 
-### Matching Point Clouds using ICP Algorithm
+Matching Point Clouds using ICP Algorithm
 
 The Iterative Closest Point (ICP) algorithm is a widely used method for aligning two point clouds. The algorithm works by iteratively finding the best transformation that aligns the two point clouds.
 
@@ -29,21 +61,12 @@ Steps for matching two point clouds using the ICP algorithm:
 5. **Repeat**: Steps 2-4 are repeated until the transformation between the two point clouds no longer changes significantly. (CHECK FOR CONVERGENCE, EITHER BY AN ITERATION LIMIT/ A CONVERGENCE TOLERANCE LIMIT)
 6. **Additional Considerations**: It is noted that the ICP sometimes never converges, as it gets stick by finding a local minima. We addressed this problem by implementing rotation clones of the input mesh via PCA, along the identified principal axes. We iteratively iterate this multiple rotation dataset over the above implemented ICP solver to find successful convergence. (CONVERGENCE MEASURES)
 
-___
 
-<p align="center" width="100%">
-<b> FINAL ICP RESULTS (Implemented inside Rhino3D) </b> <br> <br>
-  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view1.gif" width="800" /> </br>
-  <b>GIF 1: Bunnies: Front View </b> </br> 
-  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view2.gif" width="800" /> </br>
-  <b>GIF 2: Bunnies: 3D View </b> </br> 
-  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view3.gif" width="800" /> </br>
-  <b>GIF 3: Octopus: Front View </b> </br> 
-  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view4.gif" width="800" /> </br>
-  <b>GIF 4: Octopus: 3D View </b> </br>
-</p>
 
-___
+</details>
+
+<details>
+  <summary><h4> Exercises </h4></summary>
 
 <p align="center" width="100%">
 <b> EXERCISES </b> <br> <br>
@@ -80,8 +103,8 @@ Exercise 3 is an alignment correction procedure applied to the initial alignment
 <img src="https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240510_025004.jpg" width="300" /> </br>
 <b>Image Set 2</b> </br> PCA doesnot know the orientation direction of the agglomeration always, so vectors can get flipped!
 <img src="https://github.com/gasingh/ICP-3D/blob/main/240509_pca_bunnies_alignmentErrors_symmetry_FIX-DEMO.gif" width="500" /> </br>
-<b>GIF 3</b> </br> We fix the orientation problem, by recomputing PCAs and flipping the axis vectors, until overlap converged is met! <br>
+<b>GIF 3</b> </br> We try and fix the orientation problem, by recomputing PCAs and flipping the axis vectors, until overlap converged is met. But this too is not 100% solid in finding the correct alignments. This limitation is addressed by the ICP algorithm which works with point correspondences, by 1:1 mappings/ by nearest neighbour searches. <br>
 </p>
 
-___
+</details>
 
