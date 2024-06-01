@@ -1,4 +1,4 @@
-# ICP-3D
+# Shape Registration & Automated Alignment-3D
 **ICP Algorithm for Rhino3D**
 
 ![](https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240531_043415%20-%20Copy.jpg)
