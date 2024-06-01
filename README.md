@@ -20,18 +20,6 @@ _The ICP algorithm can be used to match point clouds in a variety of application
   - Accurate comparison of 3d Meshes.
   - Automated alignment of shape parts in 3d space.
 - **Archeology**: Fields such as archology where physical artifacts are often scanned and kept in digital repositories, could also benefit from such a tool. 
-
-## The ICP Algorithm (Mathematical Implementation)
-- The primary reference for this work is the original paper on ICP by Arun et al., 1987:
-  - [Least-Squares Fitting of Two 3-D Point Sets | IEEE Journals & Magazine | IEEE Xplore](https://ieeexplore.ieee.org/document/4767965)
-- An interesting web page describing the algorithm:
-  - [Arun's Method for 3D Registration](https://jingnanshi.com/blog/arun_method_for_3d_reg.html)
-- A nice paper summarizing the algorithm and also showing other mathematical approaches to solve the problem:
-  - [eggert_comparison_mva97.pdf](https://graphics.stanford.edu/~smr/ICP/comparison/eggert_comparison_mva97.pdf)
-- A paper on registration of 3d shapes by Stanford:
-  - [A method for registration of 3-D shapes](https://graphics.stanford.edu/courses/cs164-09-spring/Handouts/paper_icp.pdf)
-- ICP documentation by Open3D.
-  - [ICP registration](https://www.open3d.org/docs/latest/tutorial/t_pipelines/t_icp_registration.html)
     
 ## Demonstration of ICP inside Rhino 3D on various datasets
   
@@ -63,6 +51,18 @@ Later on, the tool was downgraded to Python 2.7 (the officially suppoted Python 
 
 _GIF 2: ICP integrated as a functionality inside Rhino3d._
 
+## The ICP Algorithm (Mathematical Implementation)
+- The primary reference for this work is the original paper on ICP by Arun et al., 1987:
+  - [Least-Squares Fitting of Two 3-D Point Sets | IEEE Journals & Magazine | IEEE Xplore](https://ieeexplore.ieee.org/document/4767965)
+- An interesting web page describing the algorithm:
+  - [Arun's Method for 3D Registration](https://jingnanshi.com/blog/arun_method_for_3d_reg.html)
+- A nice paper summarizing the algorithm and also showing other mathematical approaches to solve the problem:
+  - [eggert_comparison_mva97.pdf](https://graphics.stanford.edu/~smr/ICP/comparison/eggert_comparison_mva97.pdf)
+- A paper on registration of 3d shapes by Stanford:
+  - [A method for registration of 3-D shapes](https://graphics.stanford.edu/courses/cs164-09-spring/Handouts/paper_icp.pdf)
+- ICP documentation by Open3D.
+  - [ICP registration](https://www.open3d.org/docs/latest/tutorial/t_pipelines/t_icp_registration.html)
+    
 ___
 
 <details>
