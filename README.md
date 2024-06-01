@@ -5,19 +5,21 @@
 
 _This is an implementation of the Iterative Closest Point, ICP inside Rhino 3d. All the math is coded from scratch inside pure Python with no external dependencies. The ICP is embedded inside Rhinocommon API, to leverage direct access to Rhino 3D point clouds and meshes. No external scientific libraries were used, so all the supporting mathematical logic was written from scratch._
 
-_The envisaged usefulness of this algorithm is for mesh geometry verification and the need for precise mesh to mesh alignments, esp. in cases of geometries with unknown generation history.
+_The envisaged usefulness of this tool is for use in the Architecture, Engineering and Construction Industry, for purposes of mesh geometry verification and the need for precise mesh to mesh alignments, esp. in cases of geometries with unknown generation history._
+
 _The ICP algorithm can be used to match point clouds in a variety of applications, including robotics, computer vision, and 3D scanning. It is a powerful method for aligning point clouds and can be used to create high-quality 3D models from multiple scans or to register 3D objects in real time._
 
 `#machine-learning` `#statistics` `#linear-algebra` `#applied-maths` `#3d` `#geometry`
 
-## Aim
-- This is a native Python implementation for an ICP algorithm for **Rhino3D**, from scratch.
-- The aim is to be able to utilize this functionality inside the Rhino 3D environment, esp. for purposes of **mesh to mesh alignments**, and **mesh shape verification**.
+## Toolkit Purpose
+- This is a native IronPython implementation for an ICP algorithm for **Rhino3D**, from scratch.
+- The aim is to be able to utilize the ICP functionality inside the Rhino 3D environment, esp. for purposes of **mesh to mesh alignments**, and **mesh shape verification**.
 
 ## Use Cases
-- Accurate comparison of 3d Meshes.
-- Automated alignment of shape parts in 3d space.
 - **AEC Industry**: (Facade Components and manufacturable assemblies) Very useful to estimate similarity of facade geometries, and shape verification.
+  - Accurate comparison of 3d Meshes.
+  - Automated alignment of shape parts in 3d space.
+- **Archeology**: Fields such as archology where physical artifacts are often scanned and kept in digital repositories, could also benefit from such a tool. 
 
 ## The ICP Algorithm (Mathematical Implementation)
 - The primary reference for this work is the original paper on ICP by Arun et al., 1987:
