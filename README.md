@@ -5,13 +5,13 @@
 
 _The ICP algorithm can be used to match point clouds in a variety of applications, including robotics, computer vision, and 3D scanning. It is a powerful method for aligning point clouds and can be used to create high-quality 3D models from multiple scans or to register 3D objects in real time._
 
-_This is an implementation of the ICP inside Rhino. All the math is coded independently inside pure Python with no external code. The ICP is embedded inside Rhinocommon API, to leverage direct access to Rhino 3D point clouds and meshes._
+_This is an implementation of the ICP inside Rhino. All the math is coded independently inside pure Python with no external code. The ICP is embedded inside Rhinocommon API, to leverage direct access to Rhino 3D point clouds and meshes. No external scientific libraries are used._
 
 `#machine-learning` `#statistics` `#linear-algebra` `#applied-maths` `#3d` `#geometry`
 
 ## Aim
-- This is a native Python implementation for an ICP algorithm for Rhino3D.
-- The aim is to be able to utilize this functionality inside the Rhino 3D environment.
+- This is a native Python implementation for an ICP algorithm for **Rhino3D**, from scratch.
+- The aim is to be able to utilize this functionality inside the Rhino 3D environment, esp. for purposes of **mesh to mesh alignments**, and **mesh shape verification**.
 
 ## Use Cases
 - Accurate comparison of 3d Meshes.
