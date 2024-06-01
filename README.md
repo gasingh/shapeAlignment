@@ -13,20 +13,26 @@ _This is an implementation of the ICP inside Rhino. All the math is coded indepe
 - This is a native Python implementation for an ICP algorithm for Rhino3D.
 - The aim is to be able to utilize this functionality inside the Rhino 3D environment.
 
-### Demonstration of ICP inside Rhino 3D on various datasets
+## Use Cases
+- Accurate comparison of 3d Meshes.
+- Automated alignment of shape parts in 3d space.
+- AEC Industry: (Facade Components and manufacturable assemblies) Very useful to estimate similarity of facade geometries, and shape verification.
+
+
+## Demonstration of ICP inside Rhino 3D on various datasets
   
-#### 1. Stanford Bunny
+### 1. Stanford Bunny
   Mesh: Decimated Stanford Bunny with 178 faces, 95 vertices.
   
   <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view1.gif" width="800" /> </br>
   <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view2.gif" width="800" /> </br>
   
-#### 2. Octopus
+### 2. Octopus
   Mesh: High Resolution Octopus with 3436 faces, 1752 vertices.
   <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view3.gif" width="800" /> </br>
   <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view4.gif" width="800" /> </br>
 
-### Process of Development
+## Process of Development
 Mesh: Decimated Neferetti with 4594 faces, 2502 vertices.  
   
 Initially all the code was written in an external Python file (Python 3.4 in VSCode) . And then the interfacing with the 3d software was with custom data readers which were written inside Rhino3D to read matrix generated outputs from the ICP solver code, as meshes/ point clouds inside the 3d environment.  
