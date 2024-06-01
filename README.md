@@ -37,8 +37,7 @@ _The ICP algorithm can be used to match point clouds in a variety of application
   
 ### 2. Octopus
   Mesh: High Resolution Octopus with 3436 faces, 1752 vertices.
-  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view3.gif" width="800" /> </br>
-  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view4.gif" width="800" /> </br>
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view6_octopus_rec4_final.gif" width="800" /> </br>
   <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun2_optimal.gif" width="800" /> </br>
   <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun5_optimal2.gif" width="800" /> </br>
   
