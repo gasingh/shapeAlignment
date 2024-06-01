@@ -28,7 +28,9 @@ _The ICP algorithm can be used to match point clouds in a variety of application
   - [Arun's Method for 3D Registration](https://jingnanshi.com/blog/arun_method_for_3d_reg.html)
 - A nice paper summarizing the algorithm and also showing other mathematical approaches to solve the problem:
   - [eggert_comparison_mva97.pdf](https://graphics.stanford.edu/~smr/ICP/comparison/eggert_comparison_mva97.pdf)
-
+- A paper on registration of 3d shapes by Stanford:
+  - [A method for registration of 3-D shapes](https://graphics.stanford.edu/courses/cs164-09-spring/Handouts/paper_icp.pdf)
+    
 ## Demonstration of ICP inside Rhino 3D on various datasets
   
 ### 1. Stanford Bunny
