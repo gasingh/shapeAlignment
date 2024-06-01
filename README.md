@@ -3,9 +3,10 @@
 
 ![](https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240531_043415%20-%20Copy.jpg)
 
-_The ICP algorithm can be used to match point clouds in a variety of applications, including robotics, computer vision, and 3D scanning. It is a powerful method for aligning point clouds and can be used to create high-quality 3D models from multiple scans or to register 3D objects in real time._
+_This is an implementation of the Iterative Closest Point, ICP inside Rhino 3d. All the math is coded from scratch inside pure Python with no external dependencies. The ICP is embedded inside Rhinocommon API, to leverage direct access to Rhino 3D point clouds and meshes. No external scientific libraries were used, so all the supporting mathematical logic was written from scratch._
 
-_This is an implementation of the ICP inside Rhino. All the math is coded independently inside pure Python with no external code. The ICP is embedded inside Rhinocommon API, to leverage direct access to Rhino 3D point clouds and meshes. No external scientific libraries are used._
+_The envisaged usefulness of this algorithm is for mesh geometry verification and the need for precise mesh to mesh alignments, esp. in cases of geometries with unknown generation history.
+_The ICP algorithm can be used to match point clouds in a variety of applications, including robotics, computer vision, and 3D scanning. It is a powerful method for aligning point clouds and can be used to create high-quality 3D models from multiple scans or to register 3D objects in real time._
 
 `#machine-learning` `#statistics` `#linear-algebra` `#applied-maths` `#3d` `#geometry`
 
@@ -16,8 +17,15 @@ _This is an implementation of the ICP inside Rhino. All the math is coded indepe
 ## Use Cases
 - Accurate comparison of 3d Meshes.
 - Automated alignment of shape parts in 3d space.
-- AEC Industry: (Facade Components and manufacturable assemblies) Very useful to estimate similarity of facade geometries, and shape verification.
+- **AEC Industry**: (Facade Components and manufacturable assemblies) Very useful to estimate similarity of facade geometries, and shape verification.
 
+## The ICP Algorithm (Mathematical Implementation)
+- The primary reference for this work is the original paper on ICP by Arun et al., 1987:
+  - [Least-Squares Fitting of Two 3-D Point Sets | IEEE Journals & Magazine | IEEE Xplore](https://ieeexplore.ieee.org/document/4767965)
+- An interesting web page describing the algorithm:
+  - [Arun's Method for 3D Registration](https://jingnanshi.com/blog/arun_method_for_3d_reg.html)
+- A nice paper summarizing the algorithm and also showing other mathematical approaches to solve the problem:
+  - [eggert_comparison_mva97.pdf](https://graphics.stanford.edu/~smr/ICP/comparison/eggert_comparison_mva97.pdf)
 
 ## Demonstration of ICP inside Rhino 3D on various datasets
   
@@ -31,6 +39,9 @@ _This is an implementation of the ICP inside Rhino. All the math is coded indepe
   Mesh: High Resolution Octopus with 3436 faces, 1752 vertices.
   <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view3.gif" width="800" /> </br>
   <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view4.gif" width="800" /> </br>
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun2_optimal.gif" width="800" /> </br>
+  <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun5_optimal2.gif" width="800" /> </br>
+  
 
 ## Process of Development
 Mesh: Decimated Neferetti with 4594 faces, 2502 vertices.  
