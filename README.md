@@ -1,7 +1,9 @@
 # 3D Shape Registration & Automated Alignment
 **ICP Algorithm for Rhino3D**
 
-![](https://github.com/gasingh/ICP-3D/blob/main/ViewCapture20240531_043415%20-%20Copy.jpg)
+<img src="https://raw.githubusercontent.com/gasingh/ICP-3D/main/ViewCapture20240531_043415%20-%20Copy.jpg" width="900"> <br>
+ <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun5_optimal2_frame46.png" width="900"><br>
+ <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun2_optimal_frame30.png" width="900"><br>
 
 _This is an implementation of the Iterative Closest Point, ICP inside Rhino 3d. All the math is coded from scratch inside pure Python with no external dependencies. The ICP is embedded inside Rhinocommon API, to leverage direct access to Rhino 3D point clouds and meshes. No external scientific libraries were used, so all the supporting mathematical logic was written from scratch._
 
