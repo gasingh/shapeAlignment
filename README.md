@@ -55,6 +55,12 @@ Later on, the tool was downgraded to Python 2.7 (the officially supported Python
 
 _GIF 2: ICP integrated as a functionality inside Rhino3d._
 
+___
+
+
+<details>
+<summary> <h4> References </h4> </summary>
+
 ## The ICP Algorithm (Mathematical Implementation)
 - The primary reference for this work is the original paper on ICP by Arun et al., 1987:
   - [Least-Squares Fitting of Two 3-D Point Sets | IEEE Journals & Magazine | IEEE Xplore](https://ieeexplore.ieee.org/document/4767965)
@@ -66,12 +72,11 @@ _GIF 2: ICP integrated as a functionality inside Rhino3d._
   - [A method for registration of 3-D shapes](https://graphics.stanford.edu/courses/cs164-09-spring/Handouts/paper_icp.pdf)
 - ICP documentation by Open3D.
   - [ICP registration](https://www.open3d.org/docs/latest/tutorial/t_pipelines/t_icp_registration.html)
+</details>
     
-___
 
 <details>
 <summary> <h4> Pseudocode </h4> </summary>
-
 ## Pseudocode 
 
 Matching Point Clouds using ICP Algorithm
@@ -86,8 +91,6 @@ Steps for matching two point clouds using the ICP algorithm:
 4. **Update transformation**: The computed transformation is then used to update the transformation between the two point clouds. (REALIGN POINTS)
 5. **Repeat**: Steps 2-4 are repeated until the transformation between the two point clouds no longer changes significantly. (CHECK FOR CONVERGENCE, EITHER BY AN ITERATION LIMIT/ A CONVERGENCE TOLERANCE LIMIT)
 6. **Additional Considerations**: It is noted that the ICP sometimes never converges, as it gets stick by finding a local minima. We addressed this problem by implementing rotation clones of the input mesh via PCA, along the identified principal axes. We iteratively iterate this multiple rotation dataset over the above implemented ICP solver to find successful convergence. (CONVERGENCE MEASURES)
-
-
 
 </details>
 
