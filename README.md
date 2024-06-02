@@ -49,7 +49,7 @@ Initially all the code was written in an external Python file (Python 3.4 in VSC
 
 _GIF 1: ICP calculated externally and the final results read by Rhino 3d._
 
-Later on, the tool was downgraded to Python 2.7 (the officially suppoted Python version for Rhino v7.0, 2024!). And the entire ICP compute can happen directly inside it as a new Rhino command.
+Later on, the tool was downgraded to Python 2.7 (the officially supported Python version for Rhino v7.0, 2024!). And the entire ICP compute can happen directly inside it as a new Rhino command.
 
 <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view5_nefertiti.gif" width="450" /> </br>
 
