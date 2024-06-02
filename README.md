@@ -61,7 +61,7 @@ ___
 <details>
 <summary> <h4> References </h4> </summary>
 
-## The ICP Algorithm (Mathematical Implementation)
+### The ICP Algorithm (Mathematical Implementation)
 - The primary reference for this work is the original paper on ICP by Arun et al., 1987:
   - [Least-Squares Fitting of Two 3-D Point Sets | IEEE Journals & Magazine | IEEE Xplore](https://ieeexplore.ieee.org/document/4767965)
 - An interesting web page describing the algorithm:
@@ -77,7 +77,8 @@ ___
 
 <details>
 <summary> <h4> Pseudocode </h4> </summary>
-## Pseudocode 
+  
+### Pseudocode 
 
 Matching Point Clouds using ICP Algorithm
 
@@ -97,8 +98,9 @@ Steps for matching two point clouds using the ICP algorithm:
 <details>
   <summary><h4> Exercises </h4></summary>
 
+  ### Exercises
+
 <p align="center" width="100%">
-<b> EXERCISES </b> <br> <br>
 <b> Exercise 1: Transformations based on homogenous matrices </b> <br> <br>
   <img src="https://github.com/gasingh/ICP-3D/blob/main/240429_translate%26rotateUsingPyrePython_00.gif" width="800" /> </br>
 <b>GIF 1</b> </br> A proof of concept to illustrate the (R,t) implementation when R and t are extracted from SVD!
