@@ -43,7 +43,7 @@ _The ICP algorithm can be used to match point clouds in a variety of application
 ## Process of Development
 Mesh: Decimated Neferetti with 4594 faces, 2502 vertices.  
   
-Initially all the code was written in an external Python file (Python 3.4 in VSCode) . And then the interfacing with the 3d software was with custom data readers which were written inside Rhino3D to read matrix generated outputs from the ICP solver code, as meshes/ point clouds inside the 3d environment. So as you will see below, the code the optimization is run in the IDE on the right (VSCode), and the output is copy pasted to the clipboard. We are able to regenerate 3d point clouds and 3d meshes from computed point matrices, inside Rhino 3D.   
+Initially all the code was written in an external Python file (Python 3.4 in VSCode) . And then the interfacing with the 3d software was with custom data readers which were written inside Rhino3D to read matrix generated outputs from the ICP solver code, as meshes/ point clouds inside the 3d environment. So as you will see below, the code the optimization is run in the IDE on the right (VSCode), and the output is copy pasted to the clipboard. We are able to regenerate 3d point clouds and 3d meshes from computed point matrices, inside Rhino 3D by reading the clipboard memory.   
 
   <img src="https://github.com/gasingh/ICP-3D/blob/main/240529_ICP-DemoPts_real-time-rec_example2_presentationVersion3_final_reduced2_240601.gif" width="800" /> </br>
 
