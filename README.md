@@ -47,4 +47,4 @@ Later on, the tool was downgraded to Python 2.7 (the officially supported Python
 
 <img src="https://github.com/gasingh/shapeAlignment/blob/main/240530_icp_view5_nefertiti.gif" width="450" /> </br>
 
-_GIF 2: Mesh Alignments integrated as a functionality inside Rhino3d._
+_GIF 1: Mesh Alignments integrated as a functionality inside Rhino3d._
