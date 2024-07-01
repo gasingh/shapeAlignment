@@ -59,6 +59,7 @@ _GIF 2: ICP integrated as a functionality inside Rhino3d._
 
 ___
 
+<!--
 
 <details>
 <summary> <h4> References </h4> </summary>
@@ -94,6 +95,8 @@ Steps for matching two point clouds using the ICP algorithm:
 4. **Update transformation**: The computed transformation is then used to update the transformation between the two point clouds. (REALIGN POINTS)
 5. **Repeat**: Steps 2-4 are repeated until the transformation between the two point clouds no longer changes significantly. (CHECK FOR CONVERGENCE, EITHER BY AN ITERATION LIMIT/ A CONVERGENCE TOLERANCE LIMIT)
 6. **Additional Considerations**: It is noted that the ICP sometimes never converges, as it gets stick by finding a local minima. We addressed this problem by implementing rotation clones of the input mesh via PCA, along the identified principal axes. We iteratively iterate this multiple rotation dataset over the above implemented ICP solver to find successful convergence. (CONVERGENCE MEASURES)
+
+
 
 </details>
 
@@ -140,4 +143,4 @@ Exercise 3 is an alignment correction procedure applied to the initial alignment
 </p>
 
 </details>
-
+-->
