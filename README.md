@@ -1,9 +1,9 @@
 # 3D Shape Registration & Automated Alignment
 **Mesh Alignments for Rhino3D**
 
-<img src="https://raw.githubusercontent.com/gasingh/ICP-3D/main/ViewCapture20240531_043415%20-%20Copy.jpg" width="900"> <br>
- <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun5_optimal2_frame46.png" width="900"><br>
- <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun2_optimal_frame30.png" width="900"><br>
+<img src="https://raw.githubusercontent.com/gasingh/shapeAlignment/main/ViewCapture20240531_043415%20-%20Copy.jpg" width="900"> <br>
+ <img src="https://github.com/gasingh/shapeAlignment/blob/main/240601_icp_view7_octopusDualRun5_optimal2_frame46.png" width="900"><br>
+ <img src="https://github.com/gasingh/shapeAlignment/blob/main/240601_icp_view7_octopusDualRun2_optimal_frame30.png" width="900"><br>
 
 _The envisaged usefulness of this tool is for use in the Architecture, Engineering and Construction Industry, for purposes of mesh geometry verification and the need for precise mesh to mesh alignments, esp. in cases of geometries with unknown generation history._
 
@@ -24,18 +24,18 @@ _The envisaged usefulness of this tool is for use in the Architecture, Engineeri
 ### 1. Stanford Bunny
   Mesh: Decimated Stanford Bunny with 178 faces, 95 vertices.
   
-  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view1.gif" width="800" /> </br>
-  <img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view2.gif" width="800" /> </br>
+  <img src="https://github.com/gasingh/shapeAlignment/blob/main/240530_icp_view1.gif" width="800" /> </br>
+  <img src="https://github.com/gasingh/shapeAlignment/blob/main/240530_icp_view2.gif" width="800" /> </br>
   
 ### 2. Octopus
   Mesh: High Resolution Octopus with 3436 faces, 1752 vertices.
-  <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view6_octopus_rec4_final.gif" width="800" /> </br>
+  <img src="https://github.com/gasingh/shapeAlignment/blob/main/240601_icp_view6_octopus_rec4_final.gif" width="800" /> </br>
   The animation below shows the central octopus aligning to the two side octopuses in different poses. <br>
-  <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun5_optimal2.gif" width="800" /> </br>
+  <img src="https://github.com/gasingh/shapeAlignment/blob/main/240601_icp_view7_octopusDualRun5_optimal2.gif" width="800" /> </br>
   The animations below show the octopuses on the two sides aligning to the central octopus. For illustrating the complexity of geometrical transitions involved in the shape alignments, both the front and top views are shown. <br>
-  <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun2_optimal.gif" width="800" /> </br>
+  <img src="https://github.com/gasingh/shapeAlignment/blob/main/240601_icp_view7_octopusDualRun2_optimal.gif" width="800" /> </br>
   <i> Front View </i> <br>
-  <img src="https://github.com/gasingh/ICP-3D/blob/main/240601_icp_view7_octopusDualRun3_topView.gif" width="800" /> </br>
+  <img src="https://github.com/gasingh/shapeAlignment/blob/main/240601_icp_view7_octopusDualRun3_topView.gif" width="800" /> </br>
   <i> Top View </i> <br>
 
 ## Process of Development
@@ -45,6 +45,6 @@ Initially all the code was written in an external Python file (Python 3.4 in VSC
 
 Later on, the tool was downgraded to Python 2.7 (the officially supported Python version for Rhino v7.0, 2024!). And the entire mesh alignment compute can happen directly inside it as a new Rhino command.
 
-<img src="https://github.com/gasingh/ICP-3D/blob/main/240530_icp_view5_nefertiti.gif" width="450" /> </br>
+<img src="https://github.com/gasingh/shapeAlignment/blob/main/240530_icp_view5_nefertiti.gif" width="450" /> </br>
 
 _GIF 2: Mesh Alignments integrated as a functionality inside Rhino3d._
