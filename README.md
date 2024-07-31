@@ -1,7 +1,7 @@
 # 3D Shape Registration & Automated Alignment
 **Mesh Alignments for Rhino3D**
 
-<img src="https://raw.githubusercontent.com/gasingh/shapeAlignment/main/ViewCapture20240531_043415%20-%20Copy.jpg" width="900"> <br>
+<img src="https://github.com/gasingh/shapeAlignment/blob/main/ViewCapture20240531_043415%20-%20Copy.jpg" width="900"> <br>
  <img src="https://github.com/gasingh/shapeAlignment/blob/main/240601_icp_view7_octopusDualRun5_optimal2_frame46.png" width="900"><br>
  <img src="https://github.com/gasingh/shapeAlignment/blob/main/240601_icp_view7_octopusDualRun2_optimal_frame30.png" width="900"><br>
 
